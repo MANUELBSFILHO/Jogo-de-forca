@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Forca</h1>
+        <div id="word-display" class="word-display"></div>
+        <p id="incorrect-letters">Letras Erradas:</p>
+        <p id="chances">Chances Restantes: <span id="chances-count"></span></p>
+        <input type="text" id="guess-input" maxlength="1">
+        <button onclick="makeGuess()">Verificar</button>
+        <p id="result"></p>
+        <button onclick="resetGame()">Novo Jogo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
